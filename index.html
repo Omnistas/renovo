@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Renovo BioEdil – Wood fibre thermal insulation panels</title>
+<link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Mona+Sans:wght@400..800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBFAF7;color:#14231D;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#14231D;text-decoration:none}a:hover{color:#148163}
+img{display:block}
+.wrap{width:calc(100% - 64px);max-width:1280px;margin:0 auto}
+.hdr{position:sticky;top:0;z-index:40;background:rgba(251,250,247,.86);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);transition:box-shadow .4s,background-color .4s}
+.hdr.scrolled{box-shadow:0 12px 30px -20px rgba(20,35,29,.3);background:rgba(251,250,247,.95)}
+.nav a{position:relative;padding:8px 0;color:#14231D}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;border-radius:2px;background:#25AE87;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.6,0,.2,1)}
+.nav a:hover{color:#14231D}.nav a:hover::after{transform:scaleX(1)}
+.lang-dd{position:relative;flex:none}
+.lang-btn{display:flex;align-items:center;gap:8px;height:40px;padding:0 14px 0 16px;border:0;border-radius:999px;background:#EFEDE6;color:#14231D;font:700 13px 'Inter',sans-serif;cursor:pointer;transition:background-color .25s}
+.lang-btn:hover,.lang-btn[aria-expanded=true]{background:#E6E3DA}
+.lang-btn svg{width:10px;height:10px;transition:transform .25s cubic-bezier(.4,0,.2,1)}
+.lang-btn[aria-expanded=true] svg{transform:rotate(180deg)}
+.lang-menu{position:absolute;right:-4px;top:-4px;width:calc(100% + 8px);padding:4px;border-radius:24px;background:#fff;box-shadow:0 18px 40px -14px rgba(20,35,29,.3);transform-origin:100% 0;animation:ddIn .18s cubic-bezier(.2,.8,.2,1)}
+@keyframes ddIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.lang-menu .lang-btn{width:100%}
+.lang-opt{display:flex;align-items:center;width:100%;height:40px;padding:0 12px;border:0;border-radius:999px;background:transparent;color:#14231D;font:700 13px 'Inter',sans-serif;text-align:left;cursor:pointer;transition:background-color .2s}
+.lang-opt:hover{background:#F2F0EA}
+.lang-btn:focus-visible,.lang-opt:focus-visible{outline:3px solid #F39727;outline-offset:3px}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:space-between;gap:16px;height:60px;padding:0 8px 0 28px;border:0;border-radius:999px;font:700 16px/1 'Inter',sans-serif;cursor:pointer;white-space:nowrap;transition:background-position .9s cubic-bezier(.3,0,.2,1),background-color .4s,color .4s,box-shadow .4s}
+.btn .arr{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;overflow:hidden;transition:background-color .4s,color .4s}
+.btn .arr svg{grid-area:1/1;transition:transform .5s cubic-bezier(.6,0,.2,1)}
+.btn .arr svg+svg{transform:translateX(-170%)}
+.btn:hover .arr svg:first-child{transform:translateX(170%)}
+.btn:hover .arr svg+svg{transform:none}
+.arc::before,.arc::after{content:"";position:absolute;left:0;right:0;height:56px;background:#FBFAF7;z-index:5;pointer-events:none}
+.arc::before{top:0;border-radius:0 0 56px 56px}
+.arc-t::before{content:"";position:absolute;left:0;right:0;top:0;height:56px;background:#FBFAF7;z-index:5;pointer-events:none;border-radius:0 0 56px 56px}
+.arc::after{bottom:0;border-radius:56px 56px 0 0}
+.btn.noarr{justify-content:center;padding:0 30px}
+.btn-sm.noarr{padding:0 24px}
+.btn:focus-visible{outline:3px solid #F39727;outline-offset:3px}
+.btn-pri{color:#0B2A20;background-color:#25AE87;background-image:linear-gradient(110deg,#25AE87 0%,#25AE87 38%,#5FD3A9 50%,#25AE87 62%,#1FA37E 100%);background-size:260% 100%;background-position:100% 0;box-shadow:none}
+.btn-pri:hover{color:#0B2A20;background-position:0 0;box-shadow:none}
+.btn-pri .arr{background:#0B2A20;color:#fff}
+.btn-line{background:transparent;color:var(--ln,#2B2B2B);box-shadow:inset 0 0 0 1.5px var(--ln,#2B2B2B)}
+.btn-line .arr{background:#5FD3A9;color:#0B2A20}
+.btn-line:hover{background-color:var(--ln,#2B2B2B);color:#fff}
+.btn-line:hover .arr{background:#5FD3A9;color:#0B2A20}
+.btn-line:not(.arr-bare){transition:background-color .15s cubic-bezier(.4,0,.2,1),box-shadow .15s cubic-bezier(.4,0,.2,1),color .15s}
+.btn-line:not(.arr-bare):hover{background-color:#5FD3A9;color:var(--ln,#2B2B2B);box-shadow:inset 0 0 0 1.5px #5FD3A9}
+.btn .arr-grow svg{overflow:visible}
+.btn .arr-grow .sh{transform-origin:19px 12px;transition:transform .15s cubic-bezier(.4,0,.2,1)}
+.btn:hover .arr-grow svg:first-child{transform:none}
+.btn:hover .arr-grow .sh{transform:scaleX(1.43)}
+.btn-glass{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.btn-glass .arr{background:#fff;color:#14231D}
+.btn-glass:hover{background-color:rgba(255,255,255,.12);color:#fff}
+.btn-glass-l{background:rgba(255,255,255,.38);color:#14231D;box-shadow:inset 0 0 0 1px rgba(255,255,255,.75);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.btn-glass-l:hover{background-color:rgba(255,255,255,.38);color:#14231D}
+/* hover без стрелок: переливающийся градиент вместо нижней подсветки */
+.btn.noarr{isolation:isolate;overflow:hidden}
+.btn.noarr::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;pointer-events:none;transition:opacity .5s;background-repeat:no-repeat;background-size:150% 230%,170% 250%,130% 210%;background-position:0% 0%,100% 100%,50% 0%}
+.btn.noarr:hover::before{opacity:1;animation:btnflow 6.4s ease-in-out infinite}
+@keyframes btnflow{0%{background-position:0% 0%,100% 100%,50% 0%;background-size:150% 230%,170% 250%,130% 210%}33%{background-position:100% 70%,0% 20%,15% 100%;background-size:190% 160%,120% 300%,170% 150%}66%{background-position:30% 100%,80% 0%,100% 60%;background-size:120% 290%,200% 170%,140% 260%}100%{background-position:0% 0%,100% 100%,50% 0%;background-size:150% 230%,170% 250%,130% 210%}}
+.btn-pri.noarr:hover{background-position:100% 0;box-shadow:none}
+.btn-pri.noarr::before{background-image:radial-gradient(closest-side,rgba(95,211,169,.95),rgba(95,211,169,0)),radial-gradient(closest-side,rgba(24,150,115,.95),rgba(24,150,115,0)),radial-gradient(closest-side,rgba(170,240,212,.7),rgba(170,240,212,0))}
+.btn-glass.noarr:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.4)}
+.btn-glass.noarr::before{background-size:85% 190%,95% 200%,75% 180%;background-image:radial-gradient(closest-side,rgba(255,170,70,.55),rgba(255,170,70,0)),radial-gradient(closest-side,rgba(240,120,30,.6),rgba(240,120,30,0)),radial-gradient(closest-side,rgba(255,196,110,.42),rgba(255,196,110,0))}
+.btn-glass-l.noarr::before{background-size:85% 190%,95% 200%,75% 180%;background-image:radial-gradient(closest-side,rgba(255,196,110,.6),rgba(255,196,110,0)),radial-gradient(closest-side,rgba(255,150,50,.55),rgba(255,150,50,0)),radial-gradient(closest-side,rgba(255,214,150,.5),rgba(255,214,150,0))}
+.btn-line.noarr::before{background-image:radial-gradient(closest-side,rgba(37,174,135,.65),rgba(37,174,135,0)),radial-gradient(closest-side,rgba(95,211,169,.4),rgba(95,211,169,0)),radial-gradient(closest-side,rgba(255,255,255,.14),rgba(255,255,255,0))}
+.btn-sm{height:48px;gap:12px;padding:0 6px 0 20px;font-size:15px}
+.btn-sm .arr{width:36px;height:36px}
+.btn.arr-bare{padding:0 22px 0 26px;gap:10px}
+.btn.arr-bare .arr{width:20px;height:20px;background:transparent;color:var(--ln,#2B2B2B)}
+.btn-line.arr-bare:hover .arr{background:transparent;color:#fff}
+.lnk{display:inline-flex;align-items:center;gap:8px;font:700 16px 'Inter',sans-serif;color:#148163;transition:color .35s}
+.lnk:hover{color:#0A4A38}
+.ptitle{color:inherit;text-decoration:none;transition:color .35s}.ptitle:hover{color:#148163}
+.lnk svg{transition:transform .45s cubic-bezier(.3,0,.2,1)}
+.lnk:hover svg,.card:hover .lnk svg{transform:translateX(6px)}
+.card{transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s,border-color .6s}
+.card:hover{transform:translateY(-6px);box-shadow:0 34px 60px -34px rgba(20,35,29,.38)}
+.pcard:hover{transform:none;box-shadow:none;background:none}
+.zoom{overflow:hidden}
+.zoom img{transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.card:hover .zoom img{transform:scale(1.05)}
+.card.nozoom:hover .zoom img{transform:none}
+.ico{transition:transform .7s cubic-bezier(.3,1.5,.5,1)}
+.adv:hover .ico{transform:translateY(-4px) rotate(-6deg)}
+.tag{display:inline-flex;align-self:flex-start;align-items:center;height:30px;padding:0 12px;border-radius:999px;background:#E6F3EC;color:#126E55;font:700 13px 'Inter',sans-serif}
+.live{display:inline-flex;gap:10px;align-items:center;height:38px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:700 13px 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.live i{width:8px;height:8px;border-radius:50%;background:#E0452B;animation:pulse 1.6s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(224,69,43,.55)}100%{box-shadow:0 0 0 10px rgba(224,69,43,0)}}
+.fld{height:56px;width:100%;border:1px solid #DCD8CF;border-radius:16px;padding:0 18px;font:500 16px 'Inter',sans-serif;background:#fff;color:#14231D;outline:none;transition:border-color .3s,box-shadow .3s}
+.fld:focus{border-color:#25AE87;box-shadow:0 0 0 4px rgba(37,174,135,.18)}
+textarea.fld{height:auto;padding:16px 18px;resize:vertical}
+.fld-d{background:#fff;border-color:#fff;color:#14231D;box-shadow:0 14px 30px -18px rgba(0,0,0,.6)}
+.fld-d::placeholder{color:#6B756F}
+.flink{color:rgba(255,255,255,.74);transition:color .3s}.flink:hover{color:#5FD3A9}
+.soc{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:rgba(255,255,255,.74);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);transition:background-color .35s,color .35s}
+.soc:hover{background:#25AE87;color:#0B2A20}
+/* reveal on scroll (only when the page really scrolls) */
+.cta-bg{transform-origin:50% 50%;will-change:transform}
+/* the hidden state applies at once and only the reveal is animated, so blocks already in view on load animate in too */
+.js-rv [data-rv]{opacity:0;transform:translateY(34px);transition:none}
+.js-rv [data-rv].in{opacity:1;transform:none;transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.js-rv .mat .mat-h.in,.js-rv .mat .mat-p.in{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1),color .5s}
+.js-rv .stg>[data-rv]:nth-child(2){transition-delay:.09s}
+.js-rv .stg>[data-rv]:nth-child(3){transition-delay:.18s}
+.js-rv .stg>[data-rv]:nth-child(4){transition-delay:.27s}
+/* product description follows the title, then the spec tiles, then Learn more */
+/* body text and the buttons next to it appear together, after the heading */
+.js-rv .stg.txt>[data-rv]:not(:first-child){transition-delay:.12s}
+.js-rv .stg.ftr>[data-rv]{transition-delay:0s}
+/* advantages card overlaps the dark hero: it only slides up, never fades */
+.js-rv .advbox{opacity:1}
+.js-rv .advbox.in{transition:transform .4s cubic-bezier(.2,.8,.2,1);transition-delay:0s}
+.js-rv .pdesc{transition-delay:.1s}
+.js-rv .specs>[data-rv]{transition-delay:.2s}.js-rv .plnk{transition-delay:.32s}
+/* hero: staggered entrance right after load */
+.js-rv .hero-in>[data-rv]:nth-child(1){transition-delay:.05s}
+.js-rv .hero-in>[data-rv]:nth-child(2){transition-delay:.15s}
+.js-rv .hero-in>[data-rv]:nth-child(3){transition-delay:.27s}
+.js-rv .hero-in>[data-rv]:nth-child(4){transition-delay:.39s}
+/* advantage icons spin in only once they are actually on screen */
+.js-rv .adv .ico img{transform:translateY(48px) scale(.3) rotate(-75deg);opacity:0}
+.js-rv .adv.in .ico img{transform:none;opacity:1;transition:transform 1.15s cubic-bezier(.3,1.35,.45,1) .1s,opacity .5s .1s}
+.js-rv .adv.in:nth-child(2) .ico img{transition-delay:.22s}.js-rv .adv.in:nth-child(3) .ico img{transition-delay:.34s}.js-rv .adv.in:nth-child(4) .ico img{transition-delay:.46s}
+/* 3D material block: 10 × 15 × 8 cm → 280 × 420 × 224 px (28 px per cm) */
+.mtrack{position:relative;margin:-56px 0}
+/* top padding is 8px less than bottom: the heading's line box adds that much air above the capitals */
+.mat{position:relative;background:linear-gradient(160deg,#FDEBCB 0%,#F9DCAE 55%,#F6CF97 100%);padding:144px 0 152px;overflow:hidden}
+.js-pin .mat{position:sticky;top:28px;display:flex;align-items:center}
+.mat>.wrap{position:relative;z-index:1}
+.mat .sky{position:absolute;inset:0;z-index:0;pointer-events:none}
+.mat .sunlit{position:absolute;inset:0;background:radial-gradient(1000px 760px at var(--sx,0px) var(--sy,0px),rgba(255,251,236,.92),rgba(255,243,214,.5) 34%,rgba(255,243,214,0) 72%);opacity:var(--sl,0)}
+.mat .dusk{position:absolute;inset:0;background:radial-gradient(1250px 900px at var(--sx,0px) var(--sy,0px),rgba(255,132,66,.7),rgba(246,128,84,.26) 40%,rgba(214,120,110,0) 72%);opacity:var(--dk,0)}
+.mat .night{position:absolute;inset:0;background:linear-gradient(170deg,#22323E 0%,#172830 46%,#0F211D 100%);opacity:var(--n,0)}
+.mat .stars{position:absolute;inset:0;will-change:opacity;opacity:0;background-image:radial-gradient(1.6px 1.6px at 56% 13%,#fff 50%,transparent),radial-gradient(1.8px 1.8px at 71% 9%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 86% 12%,#fff 50%,transparent),radial-gradient(1.4px 1.4px at 9% 16%,#fff 50%,transparent),radial-gradient(1.6px 1.6px at 27% 21%,#fff 50%,transparent),radial-gradient(1.3px 1.3px at 47% 26%,#fff 50%,transparent),radial-gradient(1px 1px at 4% 31%,#fff 50%,transparent),radial-gradient(1.3px 1.3px at 39% 7%,#fff 50%,transparent)}
+.mat .stars.s2{background-image:radial-gradient(1.2px 1.2px at 63% 24%,#fff 50%,transparent),radial-gradient(1.1px 1.1px at 78% 19%,#fff 50%,transparent),radial-gradient(1.2px 1.2px at 93% 27%,#fff 50%,transparent),radial-gradient(1.1px 1.1px at 18% 8%,#fff 50%,transparent),radial-gradient(1.1px 1.1px at 37% 11%,#fff 50%,transparent),radial-gradient(1px 1px at 67% 33%,#fff 50%,transparent),radial-gradient(1.2px 1.2px at 97% 6%,#fff 50%,transparent),radial-gradient(1px 1px at 52% 38%,#fff 50%,transparent),radial-gradient(1px 1px at 82% 36%,#fff 50%,transparent)}
+.mat .sun{position:absolute;left:0;top:0;width:120px;height:120px;margin:-60px 0 0 -60px;opacity:0;will-change:transform,opacity}
+.mat .sun::before{content:"";position:absolute;left:50%;top:50%;width:760px;height:760px;margin:-380px 0 0 -380px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,236,170,.7),rgba(255,214,128,.3) 22%,rgba(255,206,118,.1) 52%,rgba(255,206,118,0))}
+.mat .sun::after{content:"";position:absolute;left:50%;top:50%;width:230px;height:230px;margin:-115px 0 0 -115px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,250,224,.95),rgba(255,236,170,.5) 46%,rgba(255,226,150,0));opacity:calc(1 - var(--ss,0)*.85)}
+.mat .sun i{position:absolute;inset:0;z-index:1;border-radius:50%;background:radial-gradient(circle,#FFFFFF 0%,#FFFDE6 42%,#FFF2B2 80%,#FFE384 100%);box-shadow:0 0 30px 8px rgba(255,236,160,.85);filter:blur(.5px)}
+.mat .sun i+i{background:radial-gradient(circle,#FFF0C2 0%,#FFBC6C 38%,#FF8642 78%,#EE5E2E 100%);box-shadow:0 0 46px 14px rgba(255,120,58,.6);opacity:var(--ss,0)}
+.mat .mat-h{color:#14231D;transition:color .22s}
+.mat .mat-p{color:#3A3023;transition:color .22s}
+.mat .stat .num,.mat .stat .lbl{transition:color .22s}
+.stage{position:relative;height:470px;display:grid;place-items:center;left:calc(max(32px, (100vw - 1280px) / 2) / -2)}
+.stage .pool{position:absolute;left:50%;top:50%;width:405px;height:405px;margin:-202px 0 0 -202px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.95),rgba(255,255,255,.45) 55%,rgba(255,255,255,0));opacity:calc(1 - var(--n,0)*.86 - var(--wo,0))}
+.stage .shadow{position:absolute;left:50%;top:50%;width:255px;height:38px;margin-top:180px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(52,38,16,.5),rgba(52,38,16,0));filter:blur(4px);opacity:var(--so,1);will-change:transform}
+.stage .exit{position:absolute;left:50%;top:50%;width:0;height:0;margin-left:var(--ex,150px);pointer-events:none}
+.stage .exit b{position:absolute;left:-150px;top:-275px;width:320px;height:550px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,172,86,.6),rgba(255,130,52,.3) 38%,rgba(255,122,46,.09) 70%,rgba(255,122,46,0));opacity:0;will-change:opacity}
+.stage .exit i{position:absolute;left:-130px;top:-220px;width:280px;height:440px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,172,92,.26),rgba(255,156,76,.1) 50%,rgba(255,150,70,0));opacity:0;will-change:transform,opacity}
+.cw{position:absolute;inset:0;display:grid;place-items:center;perspective:1500px}
+.half{width:280px;height:420px;margin:-52px 0;transform:scale(.75);transform-style:preserve-3d;will-change:transform}
+.float{position:relative;width:280px;height:420px;transform-style:preserve-3d;will-change:transform}
+.cube{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(-15deg) rotateY(28deg)}
+.face{position:absolute;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:#B9773D;background-size:cover,cover;background-position:center;box-shadow:inset 0 0 0 1px rgba(60,30,8,.14),inset 0 0 22px rgba(60,30,8,.2);filter:brightness(1.24) saturate(1.06)}
+.face::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(140deg,rgba(var(--hlc,255,240,205),.9),rgba(var(--hlc,255,240,205),.15) 55%,rgba(var(--hlc,255,240,205),0));mix-blend-mode:soft-light;opacity:var(--hl,0)}
+.face::after{content:"";position:absolute;inset:0;z-index:3;background:rgb(var(--shc,28,17,5));opacity:var(--sh,0)}
+.f-front,.f-back{width:280px;height:420px;left:0;top:0;background-image:linear-gradient(180deg,rgba(255,236,200,.1) 0%,rgba(40,20,0,.04) 70%,rgba(40,20,0,.2) 100%),url(assets/tex2-front.webp)}
+.f-front{transform:translateZ(112px)}.f-back{transform:rotateY(180deg) translateZ(112px)}
+.f-right,.f-left{width:224px;height:420px;left:28px;top:0;background-image:linear-gradient(180deg,rgba(255,236,200,.1) 0%,rgba(40,20,0,.04) 70%,rgba(40,20,0,.2) 100%),url(assets/tex2-side.webp)}
+.f-right{transform:rotateY(90deg) translateZ(140px)}.f-left{transform:rotateY(-90deg) translateZ(140px)}
+.f-top,.f-bottom{width:280px;height:224px;left:0;top:98px;background-image:linear-gradient(180deg,rgba(255,240,210,.16),rgba(255,240,210,0)),url(assets/tex2-end.webp)}
+.f-top{transform:rotateX(90deg) translateZ(210px)}.f-bottom{transform:rotateX(-90deg) translateZ(210px)}
+.f-front{--sh:var(--sh-front);--hl:var(--hl-front)}.f-back{--sh:var(--sh-back);--hl:var(--hl-back)}.f-right{--sh:var(--sh-right);--hl:var(--hl-right)}.f-left{--sh:var(--sh-left);--hl:var(--hl-left)}.f-top{--sh:var(--sh-top);--hl:var(--hl-top)}.f-bottom{--sh:.45}
+/* heat wave travelling through the block (sun side → room side): soft warm body between tail (--tu) and head (--hu) */
+.face .hb,.face .hg{position:absolute;inset:-20px;pointer-events:none;--H:calc(20px + (100% - 40px)*var(--hu,0));--T:calc(20px + (100% - 40px)*var(--tu,0))}
+.face .hb{z-index:1;mix-blend-mode:overlay;opacity:var(--hi,0);background:linear-gradient(var(--ha,90deg),rgba(255,136,52,0) calc(var(--T) - 70px),rgba(255,140,54,.6) calc(var(--T) + 14px),rgba(255,158,70,.7) calc(var(--H) - 86px),rgba(255,196,124,.84) calc(var(--H) - 22px),rgba(255,150,60,0) calc(var(--H) + 52px))}
+.face .hg{z-index:4;mix-blend-mode:screen;opacity:var(--hgo,0);background:linear-gradient(var(--ha,90deg),rgba(255,120,40,0) calc(var(--T) - 50px),rgba(255,128,44,.5) calc(var(--T) + 30px),rgba(255,150,64,.62) calc(var(--H) - 40px),rgba(255,140,52,0) calc(var(--H) + 44px))}
+.fx-warp .face .hb{filter:url(#rb-warp)}
+.face.hid .hb,.face.hid .hg{display:none}
+/* zoom window: cube face → zoom → macro → micro */
+.wsh{position:absolute;top:0;bottom:0;left:32px;right:32px;border-radius:32px;box-shadow:0 40px 80px -44px rgba(60,30,8,.6);opacity:0;z-index:1}
+.win{position:absolute;top:0;bottom:0;left:32px;right:32px;border-radius:32px;overflow:hidden;background:#6A4220;opacity:0;visibility:hidden;will-change:opacity,clip-path;z-index:2}
+.win .lv{position:absolute;inset:0;opacity:0;visibility:hidden;will-change:transform,opacity}
+.win .lv>b{position:absolute;inset:0;background-size:cover;background-position:center}
+.win .l0>b,.win .l1>b,.win .l2>b{filter:brightness(1.24) saturate(1.06)}
+.win .l0>b{left:50%;top:50%;right:auto;bottom:auto;width:280px;height:420px;margin:-210px 0 0 -140px;background-image:url(assets/tex2-front.webp);will-change:transform}
+.win .l1>b{background-image:url(assets/zm-1.webp)}
+.win .l2>b{background-image:url(assets/zm-2.webp)}
+.win .l3>b{background-image:url(assets/zm-macro.webp)}
+/* heat soaking into the fibres: the fibres themselves take the colour, gaps stay dark */
+.win .l3>.gl,.win .l3>.fr{inset:-44px;--H2:calc(44px + (100% - 88px)*var(--h2,0))}
+.win .l3>.gl{background:linear-gradient(90deg,rgba(255,132,46,.6) 0%,rgba(255,140,52,.56) calc(var(--H2) - 30%),rgba(255,156,70,.44) calc(var(--H2) - 9%),rgba(255,160,72,0) calc(var(--H2) + 7%));mix-blend-mode:overlay;opacity:var(--g2,0)}
+.win .l3>.fr{background:linear-gradient(90deg,rgba(255,170,90,0) calc(var(--H2) - 30%),rgba(255,188,116,.3) calc(var(--H2) - 7%),rgba(255,170,90,0) calc(var(--H2) + 5%));mix-blend-mode:screen;opacity:var(--g2f,0)}
+.fx-warp .win .l3>.gl,.fx-warp .win .l3>.fr{filter:url(#rb-warp-l)}
+.win .l4>b{background-image:url(assets/zm-micro.webp)}
+.win .vig{position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 90px rgba(30,14,4,.42);pointer-events:none}
+/* vapour: wisps and glassy micro-droplets finding their way up between the fibres */
+.mist{position:absolute;inset:0;pointer-events:none}
+.mist i{position:absolute;left:0;top:0;width:380px;height:260px;margin:-130px 0 0 -190px;border-radius:50%;background:radial-gradient(closest-side at 42% 55%,rgba(255,255,255,.3),rgba(255,255,255,.1) 50%,rgba(255,255,255,0)),radial-gradient(closest-side at 66% 40%,rgba(255,255,255,.2),rgba(255,255,255,0) 70%);opacity:0;will-change:transform,opacity}
+.drops{position:absolute;inset:0;pointer-events:none}
+.drops i{position:absolute;left:0;top:0;width:var(--s,16px);height:var(--s,16px);margin:calc(var(--s,16px)/-2) 0 0 calc(var(--s,16px)/-2);border-radius:50%;opacity:0;-webkit-backdrop-filter:blur(1.2px) brightness(1.22) saturate(1.15);backdrop-filter:blur(1.2px) brightness(1.22) saturate(1.15);background:radial-gradient(circle at 32% 27%,rgba(255,255,255,.98) 0,rgba(255,255,255,.85) 7%,rgba(255,255,255,.2) 17%,rgba(255,255,255,.03) 40%,rgba(255,255,255,.02) 62%,rgba(255,255,255,.2) 84%,rgba(255,255,255,.5) 100%),radial-gradient(circle at 68% 76%,rgba(255,236,206,.4),rgba(255,236,206,0) 34%);box-shadow:inset 0 2px 3px rgba(50,24,6,.3),inset 0 -1px 2px rgba(255,255,255,.4),0 3px 7px rgba(30,14,4,.3);will-change:transform,opacity}
+.drops i.nr{-webkit-backdrop-filter:none;backdrop-filter:none;filter:blur(2.2px)}
+.drops i.fa{-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;filter:blur(.6px)}
+.flow{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+.flow i{position:absolute;border-radius:50%;will-change:transform}
+.flow .b1{width:1300px;height:900px;left:-420px;top:-300px;background:radial-gradient(closest-side,rgba(214,134,58,.72),rgba(214,134,58,0));animation:fl1 9s ease-in-out infinite alternate}
+.flow .b2{width:1300px;height:900px;left:560px;top:260px;background:radial-gradient(closest-side,rgba(186,112,68,.55),rgba(186,112,68,0));animation:fl2 11s ease-in-out infinite alternate}
+.flow .b3{width:1200px;height:800px;left:200px;top:-100px;background:radial-gradient(closest-side,rgba(250,232,208,.82),rgba(250,232,208,0));animation:fl3 8s ease-in-out infinite alternate}
+.flow .b4{width:1100px;height:780px;left:700px;top:-300px;background:radial-gradient(closest-side,rgba(228,176,104,.72),rgba(228,176,104,0));animation:fl4 10s ease-in-out infinite alternate}
+.flow .b5{width:1100px;height:760px;left:-300px;top:300px;background:radial-gradient(closest-side,rgba(160,106,62,.5),rgba(160,106,62,0));animation:fl5 12s ease-in-out infinite alternate}
+@keyframes fl1{0%{transform:translate(0,0) rotate(0) scale(1,1)}33%{transform:translate(900px,140px) rotate(50deg) scale(1.3,.62)}66%{transform:translate(520px,560px) rotate(-30deg) scale(.7,1.3)}100%{transform:translate(1050px,480px) rotate(75deg) scale(1.25,.8)}}
+@keyframes fl2{0%{transform:translate(0,0) rotate(0) scale(1,1)}33%{transform:translate(-820px,-120px) rotate(-55deg) scale(1.3,.62)}66%{transform:translate(-460px,-420px) rotate(25deg) scale(.7,1.3)}100%{transform:translate(-1000px,-300px) rotate(-70deg) scale(1.2,.8)}}
+@keyframes fl3{0%{transform:translate(-600px,60px) rotate(-20deg) scale(1.2,.7)}33%{transform:translate(0,300px) rotate(40deg) scale(.7,1.3)}66%{transform:translate(400px,-40px) rotate(-35deg) scale(1.3,.7)}100%{transform:translate(-360px,-60px) rotate(30deg) scale(.8,1.25)}}
+@keyframes fl4{0%{transform:translate(0,0) rotate(0) scale(1,1)}33%{transform:translate(-700px,360px) rotate(-45deg) scale(1.35,.65)}66%{transform:translate(-1000px,100px) rotate(30deg) scale(.7,1.3)}100%{transform:translate(-500px,560px) rotate(-60deg) scale(1.2,.8)}}
+@keyframes fl5{0%{transform:translate(0,0) rotate(0) scale(1,1)}33%{transform:translate(800px,-260px) rotate(40deg) scale(1.3,.65)}66%{transform:translate(1200px,60px) rotate(-30deg) scale(.7,1.3)}100%{transform:translate(600px,-300px) rotate(55deg) scale(1.25,.8)}}
+@media (prefers-reduced-motion:reduce){.flow i{animation:none}}
+.stat{position:relative;padding:20px 18px 24px;border-radius:22px;background:rgba(255,255,255,.42);overflow:hidden;transition:background-color .6s,box-shadow .6s,transform .6s cubic-bezier(.2,.7,.2,1)}
+.stat .num{font:600 42px/1 'Mona Sans',sans-serif;letter-spacing:-.03em;color:#6A5A44;font-variant-numeric:tabular-nums;white-space:nowrap;transition:color .6s}
+.stat .unit{font-size:24px;letter-spacing:0}
+.stat .lbl{font:600 14px/1.4 'Inter',sans-serif;color:#5E5140;margin-top:10px}
+.stat .bar{display:none;position:absolute;left:18px;right:18px;bottom:12px;height:3px;border-radius:3px;background:#25AE87;transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.stat.on{background:#fff;box-shadow:0 22px 44px -26px rgba(20,35,29,.4);transform:translateY(-4px)}
+.stat.on .num{color:#148163}
+.stat.on .bar{transform:scaleX(1);transition:transform 3.2s linear}
+.mat.is-night .stat{background:rgba(255,255,255,.08)}
+.mat.is-night .stat .num{color:#DCCAAE}
+.mat.is-night .stat .lbl{color:rgba(245,240,232,.66)}
+.mat.is-night .stat.on{background:rgba(255,255,255,.16);box-shadow:0 22px 44px -26px rgba(0,0,0,.6)}
+.mat.is-night .stat.on .num{color:#7FE3BF}
+.mat.is-night .mat-h{color:#F5F0E8}
+.mat.is-night .mat-p{color:rgba(245,240,232,.78)}
+.mat.is-night .btn-glass-l{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.34)}
+/* popups */
+.pop{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(10,24,19,.48);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);animation:fade .35s ease both}
+.pop.out{animation:fadeout .22s ease both}
+.dlg{position:relative;width:min(540px,calc(100vw - 40px));max-height:calc(100vh - 40px);overflow:auto;background:#fff;border-radius:30px;padding:44px 40px 40px;color:#14231D;animation:dlg .55s cubic-bezier(.2,.8,.2,1) both}
+.dlg.wide{width:min(920px,calc(100vw - 40px))}
+.pop.out .dlg{animation:dlgout .22s ease both}
+.x{position:absolute;right:18px;top:18px;width:44px;height:44px;border:0;border-radius:50%;background:#F1EFEA;color:#14231D;display:grid;place-items:center;cursor:pointer;transition:background-color .3s,transform .4s}
+.x:hover{background:#E4F2EB;transform:rotate(90deg)}
+@keyframes fade{from{opacity:0}}@keyframes fadeout{to{opacity:0}}
+@keyframes dlg{from{opacity:0;transform:translateY(26px) scale(.97)}}
+@keyframes dlgout{to{opacity:0;transform:translateY(12px) scale(.98)}}
+.cookie{position:fixed;left:24px;bottom:24px;z-index:90;width:440px;background:#fff;border-radius:26px;box-shadow:0 24px 60px -20px rgba(20,35,29,.35);padding:28px;color:#14231D;animation:dlg .6s cubic-bezier(.2,.8,.2,1) both}
+.cmp td,.cmp th{padding:12px 18px}
+</style>
+</helmet>
+<div style="position:relative;background:#FBFAF7;overflow-x:clip;display:flex;flex-direction:column;min-height:100vh">
+
+<header class="{{ hdr }}">
+  <div class="wrap" style="height:84px;display:flex;align-items:center;gap:32px">
+    <a href="Главная.dc.html" style="flex:none;display:block"><img src="assets/logo.svg" alt="Renovo BioEdil" style="height:42px;width:auto"></a>
+    <nav class="nav" style="flex:1;display:flex;justify-content:center;gap:26px;font:600 15px 'Inter',sans-serif;white-space:nowrap">
+      <a href="Продукты.dc.html">Products</a>
+      <a href="Решения.dc.html">Solutions</a>
+      <a href="Демонстрация.dc.html">Demonstration</a>
+      <a href="Документы.dc.html">Documents</a>
+      <a href="Новости.dc.html">News</a>
+      <a href="О компании.dc.html">About us</a>
+      <a href="Контакты.dc.html">Contacts</a>
+    </nav>
+    <div class="lang-dd" data-lang-dd>
+      <button class="lang-btn" onClick="{{ toggleLang }}" aria-haspopup="listbox" aria-expanded="{{ langExp }}" aria-label="Language">{{ langCode }}<svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 3.5 5 7l3.5-3.5"/></svg></button>
+      <sc-if value="{{ langOpen }}" hint-placeholder-val="{{ false }}">
+        <div class="lang-menu" role="listbox">
+          <button class="lang-btn" onClick="{{ toggleLang }}" aria-expanded="true" aria-label="Language">{{ langCode }}<svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 3.5 5 7l3.5-3.5"/></svg></button>
+          <sc-for list="{{ langs }}" as="l" hint-placeholder-count="2">
+            <button class="lang-opt" role="option" onClick="{{ l.pick }}">{{ l.code }}</button>
+          </sc-for>
+        </div>
+      </sc-if>
+    </div>
+    <button class="btn noarr btn-pri btn-sm" onClick="{{ openContact }}">Contact us</button>
+  </div>
+</header>
+
+<section data-screen-label="01 Hero" style="padding:10px 16px 0">
+  <div style="position:relative;height:780px;max-width:1400px;margin:0 auto;border-radius:36px;overflow:hidden;background:#1D3B2F;color:#fff">
+    <video ref="{{ setVideo }}" src="assets/hero.webm" poster="assets/hero-poster.webp" autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+    <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(96deg,rgba(9,28,21,.8) 0%,rgba(9,28,21,.5) 40%,rgba(9,28,21,.06) 76%),linear-gradient(0deg,rgba(9,28,21,.5),rgba(9,28,21,0) 38%)"></div>
+    <div class="wrap hero-in" style="position:relative;z-index:2;padding-top:156px">
+      <div data-rv="" style="display:inline-flex;gap:10px;align-items:center;height:38px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.14);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:700 13px 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase"><span style="width:8px;height:8px;border-radius:50%;background:#F39727"></span>100% Made in Italy · Sardinia</div>
+      <h1 data-rv="" style="margin:28px 0 0;max-width:880px;font:500 76px/1.02 'Mona Sans',sans-serif;letter-spacing:-.035em;text-wrap:balance">Wood fibre thermal insulation panels</h1>
+      <p data-rv="" style="margin:28px 0 0;max-width:580px;font:500 20px/1.55 'Inter',sans-serif;color:rgba(255,255,255,.9);text-wrap:pretty">The first wood-fibre board plant in Italy. Protection from winter cold and summer heat for stone, timber and timber-frame buildings.</p>
+      <div data-rv="" style="display:flex;gap:12px;margin-top:44px">
+        <button class="btn noarr btn-pri" onClick="{{ openConsult }}">Get a consultation</button>
+        <button class="btn noarr btn-glass" onClick="{{ openDealer }}">Become a dealer</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="02 Advantages" style="position:relative;z-index:3;margin-top:-52px">
+  <div class="wrap">
+    <div class="stg advbox" data-rv="" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#fff;border-radius:30px;padding:10px">
+      <div class="adv" style="display:flex;gap:14px;align-items:flex-start;padding:34px 22px">
+        <div class="ico" style="flex:none;width:72px;height:72px;display:grid;place-items:center"><img src="assets/ico-shift.webp" alt="" style="width:72px;height:72px;object-fit:contain"></div>
+        <div><div style="font:600 18px/1.3 'Mona Sans',sans-serif">Thermal inertia</div><div style="font:500 15px/1.45 'Inter',sans-serif;color:#56635C;margin-top:6px;text-wrap:pretty">Phase shift of <span style="white-space:nowrap">10–14 hours</span></div></div>
+      </div>
+      <div class="adv" style="display:flex;gap:14px;align-items:flex-start;padding:34px 22px">
+        <div class="ico" style="flex:none;width:72px;height:72px;display:grid;place-items:center"><img src="assets/ico-vapor.webp" alt="" style="width:72px;height:72px;object-fit:contain"></div>
+        <div><div style="font:600 18px/1.3 'Mona Sans',sans-serif">Vapour permeability</div><div style="font:500 15px/1.45 'Inter',sans-serif;color:#56635C;margin-top:6px;text-wrap:pretty">Walls “breathe”, no mould in the house</div></div>
+      </div>
+      <div class="adv" style="display:flex;gap:14px;align-items:flex-start;padding:34px 22px">
+        <div class="ico" style="flex:none;width:72px;height:72px;display:grid;place-items:center"><img src="assets/ico-eco.webp" alt="" style="width:72px;height:72px;object-fit:contain"></div>
+        <div><div style="font:600 18px/1.3 'Mona Sans',sans-serif">Ecology</div><div style="font:500 15px/1.45 'Inter',sans-serif;color:#56635C;margin-top:6px;text-wrap:pretty">Stores carbon and reduces CO₂ emissions</div></div>
+      </div>
+      <div class="adv" style="display:flex;gap:14px;align-items:flex-start;padding:34px 22px">
+        <div class="ico" style="flex:none;width:72px;height:72px;display:grid;place-items:center"><img src="assets/ico-univ.webp" alt="" style="width:72px;height:72px;object-fit:contain"></div>
+        <div><div style="font:600 18px/1.3 'Mona Sans',sans-serif">Versatility</div><div style="font:500 15px/1.45 'Inter',sans-serif;color:#56635C;margin-top:6px;text-wrap:pretty">Suits any insulation task — outside and inside</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="03 Products" style="padding:120px 0">
+  <div class="wrap">
+    <div class="stg" style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px 40px;margin-bottom:48px">
+      <h2 data-rv="" style="margin:0;font:500 48px/1.08 'Mona Sans',sans-serif;letter-spacing:-.03em">Three densities — for any task</h2>
+      <div data-rv="" style="flex:none"><a class="btn btn-line btn-sm arr-bare" href="Продукты.dc.html" style="--ln:#2F3A35">More about products<span class="arr arr-grow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path class="sh" d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></a></div>
+    </div>
+    <div class="stg" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px">
+      <div data-rv="">
+        <div class="card pcard" style="height:100%;display:flex;flex-direction:column">
+          <a class="zoom" href="Продукт.dc.html?p=ecobuild" style="display:block;height:320px;border-radius:22px;background:#FBFAF7;padding:8px 12px;box-sizing:border-box"><img src="assets/product-3-w.webp" alt="Ecobuild boards" style="width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply"></a>
+          <div style="flex:1;display:flex;flex-direction:column;gap:14px;padding:32px 0 0">
+            <div style="font:600 28px/1.1 'Mona Sans',sans-serif;letter-spacing:-.02em"><a class="ptitle" href="Продукт.dc.html?p=ecobuild">Ecobuild</a></div>
+            <div class="pdesc" data-rv="" style="font:500 16px/1.55 'Inter',sans-serif;color:#56635C;text-wrap:pretty">Lightweight board for insulating roofs and frame walls. Maximum thermal insulation in the cold season.</div>
+            <div class="specs" style="margin-top:auto;padding-top:10px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+              <div data-rv="" style="background:#E6EBE6;border-radius:16px;padding:12px 20px"><div style="font:600 13px 'Inter',sans-serif;color:#56635C">Density, kg/m³</div><div style="font:600 22px 'Mona Sans',sans-serif;margin-top:3px">120</div></div>
+              <div data-rv="" style="background:#E6EBE6;border-radius:16px;padding:12px 20px"><div style="font:600 13px 'Inter',sans-serif;color:#56635C">λ, W/m·K</div><div style="font:600 22px 'Mona Sans',sans-serif;margin-top:3px">0.038</div></div>
+            </div>
+            <div class="plnk" data-rv="" style="margin-top:14px"><a class="lnk" href="Продукт.dc.html?p=ecobuild">Learn more<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div data-rv="">
+        <div class="card pcard" style="height:100%;display:flex;flex-direction:column">
+          <a class="zoom" href="Продукт.dc.html?p=xwood" style="display:block;height:320px;border-radius:22px;background:#FBFAF7;padding:8px 12px;box-sizing:border-box"><img src="assets/product-2-w.webp" alt="XWood boards" style="width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply"></a>
+          <div style="flex:1;display:flex;flex-direction:column;gap:14px;padding:32px 0 0">
+            <div style="font:600 28px/1.1 'Mona Sans',sans-serif;letter-spacing:-.02em"><a class="ptitle" href="Продукт.dc.html?p=xwood">XWood</a></div>
+            <div class="pdesc" data-rv="" style="font:500 16px/1.55 'Inter',sans-serif;color:#56635C;text-wrap:pretty">Rigid medium-density board for rendering. For SATE façades and roofs in warm climates.</div>
+            <div class="specs" style="margin-top:auto;padding-top:10px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+              <div data-rv="" style="background:#E6EBE6;border-radius:16px;padding:12px 20px"><div style="font:600 13px 'Inter',sans-serif;color:#56635C">Density, kg/m³</div><div style="font:600 22px 'Mona Sans',sans-serif;margin-top:3px">150</div></div>
+              <div data-rv="" style="background:#E6EBE6;border-radius:16px;padding:12px 20px"><div style="font:600 13px 'Inter',sans-serif;color:#56635C">λ, W/m·K</div><div style="font:600 22px 'Mona Sans',sans-serif;margin-top:3px">0.040</div></div>
+            </div>
+            <div class="plnk" data-rv="" style="margin-top:14px"><a class="lnk" href="Продукт.dc.html?p=xwood">Learn more<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div data-rv="">
+        <div class="card pcard" style="height:100%;display:flex;flex-direction:column">
+          <a class="zoom" href="Продукт.dc.html?p=bioklima" style="display:block;height:320px;border-radius:22px;background:#FBFAF7;padding:8px 12px;box-sizing:border-box"><img src="assets/product-1-w.webp" alt="Bioklima boards" style="width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply"></a>
+          <div style="flex:1;display:flex;flex-direction:column;gap:14px;padding:32px 0 0">
+            <div style="font:600 28px/1.1 'Mona Sans',sans-serif;letter-spacing:-.02em"><a class="ptitle" href="Продукт.dc.html?p=bioklima">Bioklima</a></div>
+            <div class="pdesc" data-rv="" style="font:500 16px/1.55 'Inter',sans-serif;color:#56635C;text-wrap:pretty">High-density board for rendering on loaded surfaces: walls, floors, roofs, SATE.</div>
+            <div class="specs" style="margin-top:auto;padding-top:10px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+              <div data-rv="" style="background:#E6EBE6;border-radius:16px;padding:12px 20px"><div style="font:600 13px 'Inter',sans-serif;color:#56635C">Density, kg/m³</div><div style="font:600 22px 'Mona Sans',sans-serif;margin-top:3px">200</div></div>
+              <div data-rv="" style="background:#E6EBE6;border-radius:16px;padding:12px 20px"><div style="font:600 13px 'Inter',sans-serif;color:#56635C">λ, W/m·K</div><div style="font:600 22px 'Mona Sans',sans-serif;margin-top:3px">0.044</div></div>
+            </div>
+            <div class="plnk" data-rv="" style="margin-top:14px"><a class="lnk" href="Продукт.dc.html?p=bioklima">Learn more<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="04 Material" style="padding:0">
+  <div class="mtrack" ref="{{ setTrack }}">
+  <div class="arc mat" ref="{{ setArc }}">
+    <div class="sky" aria-hidden="true"><div class="sunlit"></div><div class="dusk"></div><div class="night"></div><div class="stars"></div><div class="stars s2"></div><div class="sun" ref="{{ setSun }}"><i></i><i></i></div></div>
+    <div class="wrap" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;align-items:center">
+      <div class="stage" ref="{{ setStage }}" aria-hidden="true">
+        <div class="pool"></div>
+        <div class="shadow" ref="{{ setShadow }}"></div>
+        <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="rb-warp" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.016 0.03" numOctaves="2" seed="4" result="n"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="40" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter><filter id="rb-warp-l" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.007 0.015" numOctaves="3" seed="11" result="n"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="110" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter></defs></svg>
+        <div class="exit"><b></b><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="cw" ref="{{ setCw }}"><div class="half" ref="{{ setHalf }}"><div class="float" ref="{{ setFloat }}">
+          <div class="cube" ref="{{ setCube }}">
+            <div class="face f-back"><i class="hb"></i><i class="hg"></i></div>
+            <div class="face f-left"><i class="hb"></i><i class="hg"></i></div>
+            <div class="face f-bottom"></div>
+            <div class="face f-top"><i class="hb"></i><i class="hg"></i></div>
+            <div class="face f-right"><i class="hb"></i><i class="hg"></i></div>
+            <div class="face f-front"><i class="hb"></i><i class="hg"></i></div>
+          </div>
+        </div></div></div>
+        <div class="wsh" ref="{{ setWsh }}"></div>
+        <div class="win" ref="{{ setWin }}">
+          <div class="lv l0"><b></b></div>
+          <div class="lv l1"><b></b></div>
+          <div class="lv l2"><b></b></div>
+          <div class="lv l3"><b></b><b class="gl"></b><b class="fr"></b></div>
+          <div class="lv l4"><b></b></div>
+          <div class="mist"><i></i><i></i><i></i><i></i><i></i></div><div class="drops"><i style="--s:18px"></i><i class="nr" style="--s:42px"></i><i class="fa" style="--s:9px"></i><i style="--s:22px"></i><i style="--s:14px"></i><i class="fa" style="--s:10px"></i><i style="--s:26px"></i><i class="nr" style="--s:36px"></i><i class="fa" style="--s:8px"></i><i style="--s:16px"></i><i style="--s:20px"></i><i class="fa" style="--s:11px"></i><i class="nr" style="--s:46px"></i><i style="--s:24px"></i><i class="fa" style="--s:9px"></i><i style="--s:15px"></i><i style="--s:19px"></i><i class="fa" style="--s:10px"></i></div>
+          <div class="vig"></div>
+        </div>
+      </div>
+      <div class="stg">
+        <h2 class="mat-h" data-rv="" style="margin:0;font:500 46px/1.08 'Mona Sans',sans-serif;letter-spacing:-.03em;text-wrap:balance">Wood fibre — a healthy home within reach</h2>
+        <p class="mat-p" data-rv="" style="margin:24px 0 0;font:500 17px/1.65 'Inter',sans-serif;text-wrap:pretty">The panels are made from untreated pine fibres with a formaldehyde-free polyurethane binder; paraffin protects against moisture and swelling. Low thermal conductivity combined with high heat capacity keeps the temperature in the home stable for longer.</p>
+        <div data-rv="" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:32px 0 40px">
+          <div class="stat {{ st0 }}"><div class="num"><span>10–14</span><span class="unit"> h</span></div><div class="lbl">phase shift</div><i class="bar"></i></div>
+          <div class="stat {{ st1 }}"><div class="num"><span>2150</span></div><div class="lbl">heat capacity up to, J/kg·K</div><i class="bar"></i></div>
+          <div class="stat {{ st2 }}"><div class="num"><span>μ 3</span></div><div class="lbl">vapour permeability</div><i class="bar"></i></div>
+        </div>
+        <div data-rv="" style="display:flex;flex-wrap:wrap;gap:12px">
+          <button class="btn noarr btn-pri" onClick="{{ openCalc }}">Calculate savings</button>
+          <button class="btn noarr btn-glass-l" onClick="{{ openCompare }}">Compare</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section data-screen-label="05 Demo houses" style="padding:120px 0">
+  <div class="wrap" style="display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:center">
+    <div class="stg txt">
+      <h2 data-rv="" style="margin:0;font:500 46px/1.08 'Mona Sans',sans-serif;letter-spacing:-.03em;text-wrap:balance">Four houses. Five sensors. Online.</h2>
+      <p data-rv="" style="margin:24px 0 0;font:500 17px/1.65 'Inter',sans-serif;color:#3F4B45;text-wrap:pretty">We built four identical houses with different insulation and compare the indoor temperature with the outdoor one in real time.</p>
+      <p data-rv="" style="margin:16px 0 0;font:500 17px/1.65 'Inter',sans-serif;color:#3F4B45;text-wrap:pretty">Wood fibre holds back daytime heat for 10–14 hours — see how it looks on the charts for a day, a week or a season.</p>
+      <div data-rv="" style="display:flex;margin-top:40px"><a class="btn btn-line" href="Демонстрация.dc.html">Take a look<span class="arr arr-grow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path class="sh" d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></a></div>
+    </div>
+    <div data-rv="">
+      <a class="card zoom" href="Демонстрация.dc.html" style="position:relative;display:block;aspect-ratio:16/9;border-radius:32px">
+        <img src="assets/demonstration.webp" alt="Four identical demonstration houses with temperature sensors" style="width:100%;height:100%;object-fit:cover">
+        <span class="live" style="position:absolute;left:22px;top:22px"><i></i>LIVE</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="06 Solutions" style="padding:0">
+  <div class="arc" style="position:relative;margin:-56px 0;background:#F0CFA3;padding:144px 0 152px;overflow:hidden">
+    <div class="flow" aria-hidden="true"><i class="b5"></i><i class="b1"></i><i class="b2"></i><i class="b4"></i><i class="b3"></i></div>
+    <div class="wrap" style="position:relative;z-index:1">
+      <div class="stg txt" style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px 40px;margin-bottom:48px">
+        <div class="stg txt"><h2 data-rv="" style="margin:0;font:500 48px/1.08 'Mona Sans',sans-serif;letter-spacing:-.03em">Solutions by construction type</h2><p data-rv="" style="margin:18px 0 0;max-width:640px;font:500 17px/1.65 'Inter',sans-serif;color:#4C4A40;text-wrap:pretty">Ready-made insulation build-ups with layers, recommended products and calculated U-values — for architects and contractors.</p></div>
+        <div data-rv="" style="flex:none"><a class="btn btn-line btn-sm arr-bare" href="Решения.dc.html" style="--ln:#2F3A35">All construction types<span class="arr arr-grow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path class="sh" d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></a></div>
+      </div>
+      <div class="stg" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px">
+        <div data-rv=""><a class="card nozoom" href="Решение.dc.html?s=roof-over" style="height:100%;display:flex;flex-direction:column;background:#fff;border-radius:26px;overflow:hidden"><div class="zoom" style="height:240px;padding:24px 20px;box-sizing:border-box"><img src="assets/sol-pitche-roof.webp" alt="Pitched roof build-up" style="width:100%;height:100%;object-fit:contain"></div><div style="padding:6px 24px 26px"><div style="font:600 19px/1.3 'Mona Sans',sans-serif">Pitched roof</div><div style="font:500 15px/1.5 'Inter',sans-serif;color:#56635C;margin-top:8px;text-wrap:pretty">Insulation over and between the rafters, protecting the attic from overheating.</div></div></a></div>
+        <div data-rv=""><a class="card nozoom" href="Решение.dc.html?s=sate" style="height:100%;display:flex;flex-direction:column;background:#fff;border-radius:26px;overflow:hidden"><div class="zoom" style="height:240px;padding:24px 20px;box-sizing:border-box"><img src="assets/sol-exterior-walls.webp" alt="SATE external wall build-up" style="width:100%;height:100%;object-fit:contain"></div><div style="padding:6px 24px 26px"><div style="font:600 19px/1.3 'Mona Sans',sans-serif">External walls (SATE)</div><div style="font:500 15px/1.5 'Inter',sans-serif;color:#56635C;margin-top:8px;text-wrap:pretty">Rendered façade system on brick, stone and concrete.</div></div></a></div>
+        <div data-rv=""><a class="card nozoom" href="Решение.dc.html?s=frame-wall" style="height:100%;display:flex;flex-direction:column;background:#fff;border-radius:26px;overflow:hidden"><div class="zoom" style="height:240px;padding:24px 20px;box-sizing:border-box"><img src="assets/sol-framed-walls.webp" alt="Frame wall build-up" style="width:100%;height:100%;object-fit:contain"></div><div style="padding:6px 24px 26px"><div style="font:600 19px/1.3 'Mona Sans',sans-serif">Frame walls</div><div style="font:500 15px/1.5 'Inter',sans-serif;color:#56635C;margin-top:8px;text-wrap:pretty">Infill and sheathing of timber and steel frames.</div></div></a></div>
+        <div data-rv=""><a class="card nozoom" href="Решение.dc.html?s=floor" style="height:100%;display:flex;flex-direction:column;background:#fff;border-radius:26px;overflow:hidden"><div class="zoom" style="height:240px;padding:24px 20px;box-sizing:border-box"><img src="assets/sol-floors.webp" alt="Floor build-up" style="width:100%;height:100%;object-fit:contain"></div><div style="padding:6px 24px 26px"><div style="font:600 19px/1.3 'Mona Sans',sans-serif">Floors and ceilings</div><div style="font:500 15px/1.5 'Inter',sans-serif;color:#56635C;margin-top:8px;text-wrap:pretty">Thermal and acoustic insulation under screed and between storeys.</div></div></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="07 CTA lead" style="padding:120px 0 0">
+  <div class="wrap">
+  <div data-rv="" style="position:relative;border-radius:40px;color:#fff;padding:88px 80px 96px;overflow:hidden;display:flex;align-items:center">
+    <img src="assets/villa.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(1.1) saturate(1.15)">
+    <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,30,23,.55) 0%,rgba(10,30,23,.41) 55%,rgba(10,30,23,.3) 100%)"></div>
+    <div style="position:relative;width:100%;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:center">
+      <div>
+        <h2 style="margin:0;font:500 42px/1.1 'Mona Sans',sans-serif;letter-spacing:-.03em;text-shadow:0 1px 18px rgba(10,30,23,.4)">We’ll match panels to your project</h2>
+        <p style="margin:20px 0 0;font:500 17px/1.65 'Inter',sans-serif;color:rgba(255,255,255,.94);text-shadow:0 1px 14px rgba(10,30,23,.45);text-wrap:pretty">Leave your details — a technologist will get in touch, clarify the build-up and send you a calculation. On request we make panels in non-standard sizes and profiles.</p>
+      </div>
+      <form onSubmit="{{ submitLead }}" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 12px;align-items:center">
+        <input class="fld fld-d" placeholder="Name" aria-label="Name" required="{{ true }}">
+        <input class="fld fld-d" placeholder="Email" aria-label="Email" type="email" required="{{ true }}">
+        <input class="fld fld-d" placeholder="Phone" aria-label="Phone" type="tel">
+        <label style="grid-column:1/3;display:flex;gap:12px;align-items:center;font:500 14px/1.4 'Inter',sans-serif;color:rgba(255,255,255,.95);text-shadow:0 1px 10px rgba(10,30,23,.55);cursor:pointer"><input type="checkbox" required="{{ true }}" style="width:20px;height:20px;margin:0;accent-color:#25AE87;flex:none"><span>I agree to the <a href="Политика.dc.html" style="color:#fff;text-decoration:underline">privacy policy</a></span></label>
+        <button type="submit" class="btn noarr btn-pri" style="width:100%;padding-left:22px;gap:10px;font-size:15px">Get a calculation</button>
+      </form>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section data-screen-label="08 About" style="padding:120px 0">
+  <div class="wrap" style="display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:center">
+    <div class="stg txt">
+      <h2 data-rv="" style="margin:0;font:500 40px/1.12 'Mona Sans',sans-serif;letter-spacing:-.03em;text-wrap:balance">The only Italian producer of wood‑fibre boards</h2>
+      <p data-rv="" style="margin:24px 0 0;font:500 17px/1.65 'Inter',sans-serif;color:#3F4B45;text-wrap:pretty">In 2023 we opened Italy’s first wood-fibre insulation plant in Sardinia — on a former industrial site, using local raw materials with a controlled supply chain.</p>
+      <p data-rv="" style="margin:16px 0 0;font:500 17px/1.65 'Inter',sans-serif;color:#3F4B45;text-wrap:pretty">A team of 56 specialists makes panels for clients’ needs every day — including custom sizes and edge profiles.</p>
+      <div data-rv="" style="display:flex;margin-top:40px"><a class="btn btn-line" href="О компании.dc.html">Learn more<span class="arr arr-grow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path class="sh" d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></a></div>
+    </div>
+    <div data-rv="" style="aspect-ratio:16/9;border-radius:36px;overflow:hidden"><img src="assets/manufacturing.webp" alt="Renovo BioEdil plant in Sardinia" style="width:100%;height:100%;object-fit:cover;object-position:center top"></div>
+  </div>
+</section>
+
+<section data-screen-label="09 News" style="padding:0 0 120px">
+  <div class="wrap">
+    <div class="stg" style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px 40px;margin-bottom:48px">
+      <h2 data-rv="" style="margin:0;font:500 48px/1.08 'Mona Sans',sans-serif;letter-spacing:-.03em">News</h2>
+      <div data-rv=""><a class="btn btn-line btn-sm arr-bare" href="Новости.dc.html" style="--ln:#2F3A35">All news<span class="arr arr-grow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path class="sh" d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></a></div>
+    </div>
+    <div class="stg" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <div data-rv=""><a class="card nozoom" href="Новость.dc.html?n=august-demo" style="height:100%;display:flex;flex-direction:column;gap:24px;background:#fff;border-radius:30px;padding:0 0 28px;overflow:hidden"><div class="zoom" style="height:260px;border-radius:0"><img src="assets/news-1.webp" alt="Demonstration houses" style="width:100%;height:100%;object-fit:cover"></div><div style="display:flex;flex-direction:column;gap:12px;padding:0 24px"><span class="tag">Demo houses</span><div style="font:600 21px/1.3 'Mona Sans',sans-serif;text-wrap:pretty">August in the demo houses: a 12-hour phase shift</div><div style="font:500 15px/1.55 'Inter',sans-serif;color:#56635C;text-wrap:pretty">We break down the sensor data for the hottest month of the year.</div></div></a></div>
+      <div data-rv=""><a class="card nozoom" href="Новость.dc.html?n=klimahouse" style="height:100%;display:flex;flex-direction:column;gap:24px;background:#fff;border-radius:30px;padding:0 0 28px;overflow:hidden"><div class="zoom" style="height:260px;border-radius:0"><img src="assets/news-2.webp" alt="Exhibition stand" style="width:100%;height:100%;object-fit:cover"></div><div style="display:flex;flex-direction:column;gap:12px;padding:0 24px"><span class="tag">Events</span><div style="font:600 21px/1.3 'Mona Sans',sans-serif;text-wrap:pretty">Renovo BioEdil at Klimahouse</div><div style="font:500 15px/1.55 'Inter',sans-serif;color:#56635C;text-wrap:pretty">We’ll show all three panel lines and new edge profiles.</div></div></a></div>
+      <div data-rv=""><a class="card nozoom" href="Новость.dc.html?n=stone-house" style="height:100%;display:flex;flex-direction:column;gap:24px;background:#fff;border-radius:30px;padding:0 0 28px;overflow:hidden"><div class="zoom" style="height:260px;border-radius:0"><img src="assets/news-3.webp" alt="Stone house renovation" style="width:100%;height:100%;object-fit:cover"></div><div style="display:flex;flex-direction:column;gap:12px;padding:0 24px"><span class="tag">Case studies</span><div style="font:600 21px/1.3 'Mona Sans',sans-serif;text-wrap:pretty">Renovating a stone house in Sardinia</div><div style="font:500 15px/1.55 'Inter',sans-serif;color:#56635C;text-wrap:pretty">How Bioklima in a SATE system cut air-conditioning costs.</div></div></a></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="10 CTA contact" style="padding:0">
+  <div class="arc-t" style="position:relative;margin-top:-56px;display:flex;align-items:center;padding:144px 0 152px;color:#fff;background:#0F2F26;overflow:hidden">
+    <img class="cta-bg" src="assets/cta-pine.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+    <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,30,23,.72) 0%,rgba(10,30,23,.42) 45%,rgba(10,30,23,.04) 100%)"></div>
+    <div class="wrap" style="position:relative;width:calc(100% - 64px)">
+      <div class="stg txt" style="max-width:620px">
+        <h2 data-rv="" style="margin:0;font:500 48px/1.08 'Mona Sans',sans-serif;letter-spacing:-.03em">Still have questions?</h2>
+        <p data-rv="" style="margin:18px 0 0;max-width:560px;font:500 17px/1.65 'Inter',sans-serif;color:rgba(255,255,255,.88);text-wrap:pretty">Write to us — we’ll reply within one working day and send technical data, certificates and DoP.</p>
+        <div data-rv="" style="display:flex;margin-top:40px"><button class="btn noarr btn-pri" onClick="{{ openContact }}">Contact us</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="flex:1 0 auto;position:relative;z-index:6;margin:-56px 0 0;border-radius:56px 56px 0 0;background:#0F2F26;color:#fff;padding:80px 0 36px">
+  <div class="wrap">
+    <div class="stg ftr" style="display:grid;grid-template-columns:minmax(0,4fr) minmax(0,3fr) minmax(0,3fr) minmax(0,2fr);gap:40px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,.14)">
+      <div data-rv=""><a href="Главная.dc.html" style="display:inline-block"><img src="assets/logo-footer2.svg" alt="Renovo BioEdil" style="height:52px;width:auto"></a><p style="margin:22px 0 0;max-width:300px;font:500 15px/1.6 'Inter',sans-serif;color:rgba(255,255,255,.58)">Wood fibre thermal insulation panels. 100% Made in Italy.</p></div>
+      <div data-rv="" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px;align-content:start;font:600 16px 'Inter',sans-serif">
+        <a class="flink" href="Продукты.dc.html">Products</a><a class="flink" href="Новости.dc.html">News</a><a class="flink" href="Решения.dc.html">Solutions</a><a class="flink" href="О компании.dc.html">About us</a><a class="flink" href="Демонстрация.dc.html">Demonstration</a><a class="flink" href="Контакты.dc.html">Contacts</a><a class="flink" href="Документы.dc.html">Documents</a>
+      </div>
+      <div data-rv="" style="display:flex;flex-direction:column;gap:14px;font:500 16px/1.5 'Inter',sans-serif"><a class="flink" href="mailto:info@renovobioedil.com">info@renovobioedil.com</a><a class="flink" href="tel:+390781260056">+39 0781 260056</a><span style="color:rgba(255,255,255,.54)">Via del Centauro, 09016 Iglesias (SU), Italy</span></div>
+      <div data-rv="" style="display:flex;flex-direction:column;gap:22px;align-items:flex-start">
+        <button class="btn noarr btn-pri btn-sm" onClick="{{ openDealer }}">Become a dealer</button>
+        <div style="display:flex;gap:10px">
+          <a class="soc" href="https://it.linkedin.com/company/renovo-bioedil-srl" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.230.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path></svg></a>
+          <a class="soc" href="https://www.facebook.com/renovobioedil.srl/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.020 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"></path></svg></a>
+          <a class="soc" href="https://www.instagram.com/renovobioedil.srl/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"></circle></svg></a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:24px;padding-top:28px;font:500 14px 'Inter',sans-serif;color:rgba(255,255,255,.5)"><span>© 2026 Renovo BioEdil Srl · P.IVA 03538270921</span><div style="display:flex;gap:28px"><a class="flink" href="Политика.dc.html" style="color:rgba(255,255,255,.5)">Privacy policy</a><a class="flink" href="Политика.dc.html?doc=cookie" style="color:rgba(255,255,255,.5)">Cookie policy</a></div></div>
+  </div>
+</footer>
+
+<sc-if value="{{ popOpen }}" hint-placeholder-val="{{ false }}">
+  <div class="{{ popCls }}" onClick="{{ close }}">
+    <div class="{{ boxCls }}" onClick="{{ stop }}" role="dialog" aria-modal="true" tabindex="-1" style="outline:none">
+      <button class="x" onClick="{{ close }}" aria-label="Close"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      <sc-if value="{{ isForm }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:10px">
+          <div style="font:600 30px/1.15 'Mona Sans',sans-serif;letter-spacing:-.02em;padding-right:48px">{{ p.title }}</div>
+          <p style="margin:2px 0 16px;font:500 16px/1.55 'Inter',sans-serif;color:#56635C">{{ p.intro }}</p>
+          <sc-for list="{{ p.fields }}" as="f" hint-placeholder-count="3">
+            <sc-if value="{{ f.area }}" hint-placeholder-val="{{ false }}"><textarea class="fld" placeholder="{{ f.label }}" aria-label="{{ f.label }}" rows="4"></textarea></sc-if>
+            <sc-if value="{{ f.input }}" hint-placeholder-val="{{ true }}"><input class="fld" type="{{ f.type }}" placeholder="{{ f.label }}" aria-label="{{ f.label }}" required="{{ f.req }}"></sc-if>
+          </sc-for>
+          <label style="display:flex;gap:12px;align-items:center;font:500 14px/1.4 'Inter',sans-serif;color:#3F4B45;margin-top:8px;cursor:pointer"><input type="checkbox" required="{{ true }}" style="width:20px;height:20px;margin:0;accent-color:#25AE87;flex:none"><span>I agree to the <a href="Политика.dc.html" style="color:#148163;text-decoration:underline">privacy policy</a></span></label>
+          <button type="submit" class="btn noarr btn-pri" style="margin-top:14px;width:100%">{{ p.cta }}</button>
+        </form>
+      </sc-if>
+      <sc-if value="{{ isSent }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding-top:6px">
+          <div style="width:64px;height:64px;border-radius:22px;background:#E6F3EC;color:#148163;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></div>
+          <div style="font:600 30px/1.15 'Mona Sans',sans-serif;letter-spacing:-.02em">Request sent</div>
+          <p style="margin:0;font:500 16px/1.55 'Inter',sans-serif;color:#56635C">Thank you! We’ll get back to you within one working day.</p>
+          <button class="btn noarr btn-line btn-sm" onClick="{{ close }}" style="margin-top:10px">Close</button>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isCompare }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:24px">
+          <div style="font:600 30px/1.15 'Mona Sans',sans-serif;letter-spacing:-.02em;padding-right:56px">Wood fibre compared with other materials</div>
+          <div style="border-radius:20px;overflow:hidden;border:1px solid #ECE8E0">
+            <table class="cmp" style="width:100%;border-collapse:collapse;font:500 15px 'Inter',sans-serif">
+              <thead><tr style="background:#2F3A35;color:#fff"><th style="text-align:left;font-weight:700">Material</th><th style="text-align:right;font-weight:700">Density, kg/m³</th><th style="text-align:right;font-weight:700">Thermal conductivity, W/m·K</th><th style="text-align:right;font-weight:700">Heat capacity, J/kg·K</th></tr></thead>
+              <tbody>
+                <sc-for list="{{ cmp }}" as="r" hint-placeholder-count="12">
+                  <tr style="background:{{ r.bg }};border-top:{{ r.border }}"><td style="font-weight:700;color:{{ r.fg }}">{{ r.mat }}</td><td style="text-align:right">{{ r.d }}</td><td style="text-align:right">{{ r.l }}</td><td style="text-align:right;font-weight:{{ r.cw }};color:{{ r.fg }}">{{ r.c }}</td></tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;font:500 15px/1.55 'Inter',sans-serif;color:#56635C">
+            <div><div style="font:800 16px 'Inter',sans-serif;color:#14231D;margin-bottom:6px">Thermal conductivity</div>A material’s ability to conduct heat. The lower the value, the better the material insulates.</div>
+            <div><div style="font:800 16px 'Inter',sans-serif;color:#14231D;margin-bottom:6px">Heat capacity</div>The amount of heat needed to change a material’s temperature. High heat capacity delays heat transfer and keeps the temperature in the home stable in summer and winter.</div>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ cookie }}" hint-placeholder-val="{{ false }}">
+  <div class="cookie" role="dialog" aria-label="Cookie">
+    <div style="font:600 19px 'Mona Sans',sans-serif">We use cookies</div>
+    <p style="margin:10px 0 0;font:500 15px/1.55 'Inter',sans-serif;color:#56635C">Cookies help the site work and let us analyse traffic. More in our <a href="Политика.dc.html?doc=cookie" style="color:#148163;text-decoration:underline">Cookie policy</a>.</p>
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="btn btn-pri btn-sm" onClick="{{ accept }}" style="padding-right:20px">Accept</button>
+      <button class="btn btn-line btn-sm" onClick="{{ decline }}" style="padding-right:20px">Decline</button>
+    </div>
+  </div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6608}}'>
+class Component extends DCLogic {
+  state = { popup: null, closing: false, cookie: false, lang: 'IT', langOpen: false, active: -1, scrolled: false };
+  // hide reveal items before the first paint of a real (scrolling) window; the tall static canvas frame keeps everything visible
+  rvEarly = (() => { try { document.documentElement.classList.add('js-rv'); } catch (e) {} return true; })();
+  FORMS = {
+    contact: { title: 'Contact us', intro: 'We’ll reply within one working day.', cta: 'Send', fields: ['Name', 'Email', 'Phone', 'Message*'] },
+    lead: { title: 'Get a calculation', intro: 'Leave your details — a technologist will send a calculation for your project.', cta: 'Send', fields: ['Name', 'Email', 'Phone'] },
+    consult: { title: 'Technical consultation', intro: 'A technologist will help you choose the product and thickness for your build-up.', cta: 'Request a consultation', fields: ['Name', 'Email', 'Phone'] },
+    dealer: { title: 'Become a dealer', intro: 'Tell us about your company — we’ll send our partnership terms and price list.', cta: 'Send request', fields: ['Name', 'Company', 'Region', 'Email', 'Phone'] },
+  };
+  CMP = [
+    ['Stone wool', [[60, '0.037', 850], [120, '0.040', 890], [150, '0.042', 920], [200, '0.045', '1,000']]],
+    ['Extruded polystyrene (XPS)', [[32, '0.032', '1,300'], [40, '0.030', '1,350']]],
+    ['Wood fibre', [[120, '0.038', '2,050'], [150, '0.040', '2,100'], [200, '0.044', '2,150']], true],
+    ['Expanded polystyrene (EPS)', [[15, '0.040', '1,300'], [25, '0.038', '1,350'], [35, '0.035', '1,450']]],
+  ];
+  setStage = el => { this.stage = el; };
+  setCube = el => { this.cube = el; };
+  setShadow = el => { this.shadow = el; };
+  setTrack = el => { this.track = el; };
+  setArc = el => { this.arc = el; };
+  setSun = el => { this.sun = el; };
+  setCw = el => { this.cw = el; };
+  setHalf = el => { this.half = el; };
+  setWin = el => { this.win = el; };
+  setWsh = el => { this.wsh = el; };
+  setFloat = el => { this.flt = el; };
+  setVideo = el => {
+    if (!el) return;
+    el.muted = true; el.defaultMuted = true; el.loop = true; el.playsInline = true;
+    try { const r = el.play(); if (r && r.catch) r.catch(() => {}); } catch (e) {}
+  };
+  componentDidMount() {
+    if (window.__rbCleanup) window.__rbCleanup();
+    const root = document.documentElement;
+    const sc = document.scrollingElement || root;
+    this.scrollMode = sc.scrollHeight > window.innerHeight + 400;
+    this.nums = Array.from(document.querySelectorAll('[data-count]'));
+    const onOpen = e => this.open(e.detail);
+    window.addEventListener('rb-popup', onOpen);
+    const onDoc = e => { if (this.state.langOpen && !(e.target.closest && e.target.closest('[data-lang-dd]'))) this.setState({ langOpen: false }); };
+    const onKey = e => { if (e.key !== 'Escape') return; if (this.state.popup) this.close(); else if (this.state.langOpen) this.setState({ langOpen: false }); };
+    document.addEventListener('click', onDoc); document.addEventListener('keydown', onKey);
+    // second CTA: background grows slightly as the block scrolls through the window
+    const zimg = document.querySelector('.cta-bg');
+    const zoom = () => { if (!zimg) return; const s = zimg.parentElement.getBoundingClientRect(), t = Math.min(1, Math.max(0, (window.innerHeight - s.top) / (window.innerHeight + s.height))); zimg.style.transform = 'scale(' + (1 + .16 * t).toFixed(4) + ')'; };
+    let io = null, iio = null, rvT = null, timer = null;
+    const onScroll = () => { const s = window.scrollY > 24; if (s !== this.state.scrolled) this.setState({ scrolled: s }); };
+    root.classList.add('js-rv');
+    // a re-mounted page (live update, page switch) must replay the entrance: drop leftovers from the previous run and let the hidden state paint
+    document.querySelectorAll('[data-rv].in, .adv.in').forEach(el => el.classList.remove('in'));
+    io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { const g = e.target.parentElement; if (g && g.classList.contains('txt')) g.querySelectorAll(':scope > [data-rv]').forEach(c => { c.classList.add('in'); io.unobserve(c); }); else { e.target.classList.add('in'); io.unobserve(e.target); } } }), { rootMargin: '0px 0px -40px 0px', threshold: 0.01 });
+    // advantage icons wait until they are really on screen, not just their row
+    iio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { const a = e.target.closest('.adv'); if (a) a.classList.add('in'); iio.unobserve(e.target); } }), { threshold: 0.75 });
+    // start observing once the hidden state has been painted (and fonts are in), so whatever is already in view animates in after load
+    let started = false;
+    const go = () => { if (started) return; started = true; clearTimeout(rvT); requestAnimationFrame(() => requestAnimationFrame(() => { if (!io) return; document.querySelectorAll('[data-rv]').forEach(el => io.observe(el)); document.querySelectorAll('.adv .ico').forEach(el => iio.observe(el)); })); };
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(go, go);
+    rvT = setTimeout(go, 250);
+    // tall static frame: everything is "in view" at once, so cascade the entrance top to bottom
+    if (!this.scrollMode) { const H = document.documentElement.scrollHeight || 6600; document.querySelectorAll('[data-rv]').forEach(el => { const sp = el.parentElement.classList.contains('specs') || el.classList.contains('plnk') || el.classList.contains('pdesc'), r = sp ? el.closest('.pcard') : el, y = r.getBoundingClientRect().top + window.scrollY; if (el.classList.contains('advbox')) { el.style.transitionDelay = '.2s'; return; } el.style.transitionDelay = (.1 + (el.classList.contains('plnk') ? .32 : el.classList.contains('pdesc') ? .1 : sp ? .2 : 0) + 2.6 * Math.min(1, y / H)).toFixed(2) + 's'; }); }
+    if (this.scrollMode) {
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('scroll', zoom, { passive: true });
+      onScroll(); zoom();
+      window.addEventListener('resize', this.layoutPin);
+      requestAnimationFrame(() => this.layoutPin());
+      timer = setTimeout(() => { let seen = null; try { seen = localStorage.getItem('rb-cookie'); } catch (e) {} if (!seen) this.setState({ cookie: true }); }, 1600);
+    }
+    this.p = null; this.t0 = performance.now();
+    const loop = now => { this.raf = requestAnimationFrame(loop); this.tick(now); };
+    this.raf = requestAnimationFrame(loop);
+    window.__rbCleanup = () => {
+      cancelAnimationFrame(this.raf); window.removeEventListener('rb-popup', onOpen); document.removeEventListener('click', onDoc); document.removeEventListener('keydown', onKey); window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', this.layoutPin);
+      window.removeEventListener('scroll', zoom); if (io) io.disconnect(); io = null; if (iio) iio.disconnect(); clearTimeout(rvT); clearTimeout(timer); clearTimeout(this.ct);
+    };
+  }
+  componentWillUnmount() { if (window.__rbCleanup) { window.__rbCleanup(); window.__rbCleanup = null; } }
+  tick(now) {
+    if (this.scrollMode && !this.pinOk) this.layoutPin();
+    if (this.scrollMode && this.pinOn) {
+      if (!this.track || !this.arc) return;
+      const r = this.track.getBoundingClientRect();
+      const x = this.pinTop - r.top, target = Math.min(1, Math.max(0, x / this.D));
+      // while pinned the block grows to fill the window below the header, and shrinks back before it is released
+      let ex = 0;
+      if (this.E > 0 && x > 0 && x < this.D) { const s = t => { t = t < 0 ? 0 : t > 1 ? 1 : t; return t * t * (3 - 2 * t); }; ex = Math.min(this.D - x, this.E * Math.min(s(x / this.R), s((this.D - x) / this.R))); }
+      if (Math.abs(ex - (this.ex || 0)) > .4 || (ex === 0 && this.ex)) { this.ex = ex; this.arc.style.minHeight = (this.natH + ex).toFixed(1) + 'px'; }
+      if (this.p == null) this.p = target;
+      // nothing to draw while the block is far outside the window
+      if ((r.bottom < -120 || r.top > window.innerHeight + 120) && this.p === target && this.drawn) return;
+      this.p += (target - this.p) * 0.12;
+      if (Math.abs(target - this.p) < 0.0004) this.p = target;
+    } else {
+      const T = 23000, hold = 1500, t = (now - this.t0) % T;
+      this.p = Math.min(1, t / (T - hold));
+    }
+    this.scene(this.p, now);
+    this.drawn = true;
+  }
+  layoutPin = () => {
+    if (!this.track || !this.arc || !this.scrollMode) return;
+    // pin only in a real browser window; a tall static frame (design canvas) shows the looped animation instead
+    this.pinOn = window.innerHeight < 1500;
+    document.documentElement.classList.toggle('js-pin', this.pinOn);
+    this.cxW = 0;
+    if (!this.pinOn) { this.track.style.height = ''; this.arc.style.top = ''; this.arc.style.padding = ''; this.arc.style.minHeight = ''; this.ex = 0; this.pinOk = true; return; }
+    const h = document.querySelector('header');
+    this.hh = h ? h.offsetHeight : 84;
+    // pins when the header's bottom edge meets the straight edge of the coloured background (the 56px rounded-corner strip slides under the header)
+    this.pinTop = this.hh - 56;
+    this.arc.style.top = this.pinTop + 'px';
+    // same inner spacing as the solutions block (96px); only a window too short to show the buttons squeezes it
+    const wr = this.arc.querySelector('.wrap'), ch = wr ? wr.offsetHeight : 500;
+    const g = Math.max(40, Math.min(96, window.innerHeight - this.hh - ch - 40));
+    this.arc.style.padding = (56 + g - 8) + 'px 0 ' + (56 + g) + 'px';
+    this.arc.style.minHeight = ''; this.ex = 0;
+    this.natH = this.arc.offsetHeight;
+    // full height: the coloured area reaches the bottom of the window (its rounded bottom strip stays just below it)
+    this.E = Math.max(0, window.innerHeight - this.pinTop + 56 - this.natH);
+    this.R = Math.max(160, 2 * this.E);
+    this.D = Math.max(2100, Math.round(window.innerHeight * 2.7));
+    this.track.style.height = (this.natH + this.D) + 'px';
+    this.pinOk = true;
+  };
+  scene(p, now) {
+    const c = this.cube, st = this.stage, arc = this.arc, w = this.win;
+    if (!c || !st || !arc || !w || !this.half || !this.cw) return;
+    const cl = x => x < 0 ? 0 : x > 1 ? 1 : x, seg = (x, a, b) => cl((x - a) / (b - a));
+    const sm = t => t * t * (3 - 2 * t), io = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    const mix = (a, b, t) => a + (b - a) * t, fr = x => x - Math.floor(x);
+    const set = (el, k, val) => el.style.setProperty(k, typeof val === 'number' ? val.toFixed(3) : val);
+    const T = (now || 0) / 1000, PI = Math.PI;
+    if (this.warp == null) { this.warp = !!document.getElementById('rb-warp'); arc.classList.toggle('fx-warp', this.warp); }
+    // phases: 1 phase shift · zoom · 2 heat capacity · zoom · 3 vapour permeability
+    const s1 = seg(p, 0, .34), u = seg(p, .34, .43), s2 = seg(p, .43, .65), v = seg(p, .65, .73), s3 = seg(p, .73, 1);
+    if (this.cxW !== window.innerWidth || !this.cx) { const sr = st.getBoundingClientRect(), ar = arc.getBoundingClientRect(); this.cx = sr.left + sr.width / 2 - ar.left; this.cy = sr.top + sr.height / 2 - ar.top; this.cxW = window.innerWidth; }
+    const H = arc.clientHeight;
+    // --- sky: the sun rises next to the left edge of the block, sets, night falls; dawn returns while zooming in
+    const a = sm(seg(s1, 0, .22)), b = io(seg(s1, .36, .82));
+    const dawn = sm(sm(seg(u, .08, .44)));
+    const n = sm(sm(seg(s1, .5, .76))) * (1 - dawn);
+    const sunX = this.cx - 262 + 37 * a - 12 * b, sunY = -170 + (H * .2 + 170) * a + H * .92 * b;
+    set(arc, '--n', n);
+    // time-driven values go straight onto their own elements, so nothing else has to be restyled between scrolls
+    const S = this.starEls || (this.starEls = Array.from(arc.querySelectorAll('.stars')));
+    S.forEach((el, i) => { el.style.opacity = (n * n * (.72 + .28 * Math.sin(T * (1.3 + .6 * i) + 2 * i))).toFixed(3); });
+    if (n > .5 !== this.night) { this.night = n > .5; arc.classList.toggle('is-night', this.night); }
+    if (u > 0) { set(arc, '--sx', (this.cx - 300).toFixed(0) + 'px'); set(arc, '--sy', (H * 1.08).toFixed(0) + 'px'); set(arc, '--dk', Math.sin(PI * seg(u, .06, .6)) * .5); set(arc, '--sl', 0); }
+    else { set(arc, '--sx', sunX.toFixed(0) + 'px'); set(arc, '--sy', sunY.toFixed(0) + 'px'); set(arc, '--dk', Math.sin(PI * seg(s1, .36, .92)) * .92); set(arc, '--sl', a * (1 - sm(seg(s1, .42, .78)))); }
+    if (this.sun) {
+      const sc = 1 + .16 * b;
+      this.sun.style.transform = 'translate(' + sunX.toFixed(1) + 'px,' + sunY.toFixed(1) + 'px) scale(' + sc.toFixed(3) + ',' + (sc * (1 - .08 * b)).toFixed(3) + ')';
+      this.sun.style.opacity = (u > 0 ? 0 : a * (1 - seg(s1, .8, .92))).toFixed(3);
+      set(this.sun, '--ss', sm(seg(s1, .38, .64)));
+    }
+    // --- block: turns briskly until the heat arrives, then drifts very slowly (3/4 view → face-on for the zoom)
+    const fast = 1 - Math.pow(1 - seg(s1, 0, .24), 2.4), settle = 1 - sm(seg(u, 0, .3));
+    const ry = 28 - 170 * fast - 38 * s1, rx = (-15 + 3 * Math.sin(s1 * PI * 2)) * settle;
+    const k = .75 + .17 * sm(s1);
+    this.half.style.transform = 'scale(' + k.toFixed(3) + ')';
+    if (this.flt) this.flt.style.transform = 'translateY(' + ((-6 + 6 * Math.cos(T / 7 * PI * 2)) * settle).toFixed(2) + 'px)';
+    const co = u < .38 ? 1 : 0;
+    this.cw.style.opacity = co; this.cw.style.visibility = co ? 'visible' : 'hidden';
+    // --- light: key light comes from the sun, turns warm and low at sunset; a dim cool light at night
+    const sunW = a * (1 - dawn), dxs = sunX - this.cx, dys = Math.min(sunY - this.cy - (this.ex || 0) / 2, -30), dl = Math.hypot(dxs, dys) || 1;
+    const Ld = [mix(-.42, dxs / dl * .8, sunW), mix(-.72, dys / dl * .8, sunW), mix(.55, .72, sunW)];
+    const dusk = Math.sin(PI * seg(s1, .4, .86)) * (u > 0 ? 0 : 1);
+    const hc = [mix(mix(255, 255, dusk), 170, n), mix(mix(240, 172, dusk), 200, n), mix(mix(205, 96, dusk), 255, n)];
+    set(st, '--hlc', hc.map(x => Math.round(x)).join(','));
+    set(st, '--shc', [mix(28, 8, n), mix(17, 16, n), mix(5, 28, n)].map(x => Math.round(x)).join(','));
+    this.light(c, rx, ry, k, Ld, 1 - .88 * n, [.5, -.7, .5], .4 * n, n);
+    // cast shadow: pushed away from the sun, stretching as it gets low
+    if (this.shadow) {
+      const off = (34 * a + 86 * b) * (u > 0 ? 0 : 1 - seg(s1, .84, .96)), sx = 1 + .75 * b * (u > 0 ? 0 : 1 - seg(s1, .84, .96));
+      this.shadow.style.transform = 'translateX(calc(-50% + ' + off.toFixed(1) + 'px)) scaleX(' + sx.toFixed(3) + ')';
+      const sv = 1 - sm(seg(s1, .5, .8));
+      set(st, '--so', sv * (u > 0 ? 0 : 1));
+      const sb2 = (4 + 8 * seg(s1, .4, .8)).toFixed(1);
+      if (sb2 !== this.shBlur) { this.shBlur = sb2; this.shadow.style.filter = 'blur(' + sb2 + 'px)'; }
+    }
+    // --- heat: a wave enters on the sun side, slowly crosses the block and is given off on the room side at night
+    const head = -.14 + 1.34 * (1 - Math.pow(1 - seg(s1, .14, .76), 1.5));
+    const tail = -.24 + 1.44 * sm(seg(p, .34 * .52, .34 + .09 * .3));
+    const hi = sm(seg(s1, .12, .2)) * (1 - seg(u, .26, .36));
+    set(st, '--hi', hi);
+    set(st, '--hgo', hi * (.1 + .12 * n));
+    this.heatFront(c, head, tail, ry, k);
+    const hx = sm(seg(head, .8, 1.12)) * (1 - sm(seg(tail, .72, 1.12))) * (1 - seg(u, .22, .36));
+    const G = this.glowEls || (this.glowEls = Array.from(st.querySelectorAll('.exit b')));
+    G.forEach(el => { el.style.opacity = (hx * (.88 + .12 * Math.sin(T * 2.3))).toFixed(3); });
+    const Hz = this.haze || (this.haze = Array.from(st.querySelectorAll('.exit i')));
+    Hz.forEach((el, i) => {
+      const t = fr(T * .16 + p * 7 + i / Hz.length), o = hx * Math.sin(PI * t) * .85;
+      el.style.opacity = o.toFixed(3);
+      if (o > .004) el.style.transform = 'translate(' + (-10 + 190 * t).toFixed(1) + 'px,' + ((i % 2 ? -1 : 1) * 60 * Math.sin(i * 2.1) - 60 * t * t + 12 * Math.sin(T * 1.4 + i * 1.9)).toFixed(1) + 'px) scale(' + (.7 + .7 * t).toFixed(3) + ')';
+    });
+    // --- zoom window: opens from exactly the face of the block (same size, same texture) to the full frame
+    const wo = seg(u, .3, .37), e = io(seg(u, .37, .8));
+    set(st, '--wo', wo);
+    const ww = w.offsetWidth, wh = w.offsetHeight;
+    w.style.opacity = wo.toFixed(3); w.style.visibility = wo <= 0 ? 'hidden' : 'visible';
+    const ps = 1500 / (1500 - 112 * k), fw = 280 * k * ps, fh = 420 * k * ps;
+    w.style.clipPath = 'inset(' + Math.max(0, (wh - fh) / 2 * (1 - e)).toFixed(1) + 'px ' + Math.max(0, (ww - fw) / 2 * (1 - e)).toFixed(1) + 'px round ' + (6 + 26 * e).toFixed(1) + 'px)';
+    if (this.wsh) this.wsh.style.opacity = seg(e, .8, 1).toFixed(3);
+    // focus pull: the picture softens while the lens travels and snaps sharp on arrival
+    const bl = 3.2 * Math.sin(PI * seg(u, .55, 1)) + 4.5 * Math.sin(PI * seg(v, .08, .95));
+    w.style.filter = bl > .08 ? 'blur(' + bl.toFixed(2) + 'px)' : 'none';
+    const L = this.lvs || (this.lvs = Array.from(w.querySelectorAll('.lv')));
+    const f1 = seg(u, .6, .8), f2 = seg(u, .78, .9), f3 = seg(u, .88, 1), f4 = seg(v, .3, .8);
+    const ops = [f1 < 1 ? 1 : 0, f2 < 1 ? f1 : 0, f3 < 1 ? f2 : 0, f4 < 1 ? f3 : 0, f4];
+    const scs = [1, 1 + .8 * seg(u, .6, 1), 1 + .5 * seg(u, .78, 1), 1 + .06 * s2 + 1.2 * Math.pow(v, 1.5), 1 + .14 * io(seg(v, .3, 1)) + .05 * s3];
+    L.forEach((el, i) => { el.style.opacity = ops[i].toFixed(3); el.style.visibility = ops[i] <= 0 ? 'hidden' : 'visible'; el.style.transform = 'scale(' + scs[i].toFixed(3) + ')'; });
+    const b0 = this.b0 || (this.b0 = L[0] && L[0].firstElementChild);
+    if (b0) { const S = (k * ps * (1 + 1.45 * e + .5 * seg(u, .8, 1))).toFixed(3); b0.style.transform = 'scale(-' + S + ',' + S + ')'; }
+    // --- step 2: heat soaks into the fibres from the sun side — quickly at first, then ever slower, like real diffusion
+    const q = 1 - Math.pow(1 - seg(s2, .03, .95), 1.8), on2 = seg(s2, 0, .05) * (v < 1 ? 1 : 0);
+    set(w, '--h2', -.12 + 1.3 * q);
+    set(w, '--g2', on2);
+    set(w, '--g2f', on2 * (1 - seg(s2, .86, 1)));
+    // --- step 3: vapour drifts up between the fibres; scrolling drives the flow, and it keeps breathing when the scroll rests
+    const flow = sm(seg(s3, 0, .14)), adv = s3 * 1.5 + T * .028;
+    const Dr = this.drops || (this.drops = Array.from(w.querySelectorAll('.drops i')));
+    if (flow <= 0) { if (this.dropsOn) { Dr.forEach(el => { el.style.opacity = 0; }); this.dropsOn = false; } }
+    else {
+      this.dropsOn = true;
+      Dr.forEach((el, i) => {
+        const near = el.className === 'nr', far = el.className === 'fa', sp = near ? 1.5 : far ? .62 : 1;
+        const t = fr(i * .377 + adv * sp), x0 = fr(i * .618 + .09);
+        const o = flow * Math.sin(PI * t) * (near ? .8 : far ? .6 : 1);
+        el.style.opacity = o.toFixed(3);
+        const x = ww * (.04 + .92 * x0 + (near ? .05 : .034) * Math.sin(t * 9.5 + i * 1.7) + .012 * Math.sin(t * 23 + i)) + 1.5 * Math.sin(T * 2.2 + i * 2.4);
+        const y = wh * (1.1 - 1.2 * t) + 1.5 * Math.cos(T * 1.9 + i * 1.3);
+        el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px) scale(' + (.82 + .3 * t).toFixed(3) + ')';
+      });
+    }
+    const Mi = this.mist || (this.mist = Array.from(w.querySelectorAll('.mist i')));
+    Mi.forEach((el, i) => {
+      const t = fr(i * .23 + adv * .5), o = flow * Math.sin(PI * t) * .5;
+      el.style.opacity = o.toFixed(3);
+      if (o > .004) el.style.transform = 'translate(' + (ww * ([.24, .72, .46, .12, .86][i] + .05 * Math.sin(t * 5 + i))).toFixed(1) + 'px,' + (wh * (1.2 - 1.45 * t)).toFixed(1) + 'px) scale(' + (.8 + .6 * t).toFixed(3) + ')';
+    });
+    const act = p < .004 ? -1 : p < .385 ? 0 : p < .69 ? 1 : 2;
+    if (act !== this.state.active) this.setState({ active: act });
+  }
+  heatFront(c, head, tail, ry, k) {
+    const R = Math.PI / 180, cb = Math.cos(ry * R), sb = Math.sin(ry * R), E = 140 * Math.abs(cb) + 112 * Math.abs(sb);
+    const Xh = -E + 2 * E * head, Xt = -E + 2 * E * tail;
+    const F = this.fEls || (this.fEls = { front: c.querySelector('.f-front'), back: c.querySelector('.f-back'), right: c.querySelector('.f-right'), left: c.querySelector('.f-left'), top: c.querySelector('.f-top') });
+    const ends = { front: [-140 * cb + 112 * sb, 140 * cb + 112 * sb], back: [140 * cb - 112 * sb, -140 * cb - 112 * sb], right: [140 * cb + 112 * sb, 140 * cb - 112 * sb], left: [-140 * cb - 112 * sb, -140 * cb + 112 * sb] };
+    const vis = { front: cb > .02, back: cb < -.02, right: sb < -.02, left: sb > .02 };
+    const V = this.fVis || (this.fVis = {});
+    for (const key in ends) {
+      const el = F[key]; if (!el) continue;
+      if (V[key] !== vis[key]) { V[key] = vis[key]; el.classList.toggle('hid', !vis[key]); }
+      if (!vis[key]) continue;
+      const [xa, xb] = ends[key], lo = Math.min(xa, xb), hi = Math.max(xa, xb), d = hi - lo;
+      const f = X => d < 1 ? (X > lo ? 3 : -2) : Math.max(-2, Math.min(3, (X - lo) / d));
+      el.style.setProperty('--hu', f(Xh).toFixed(3)); el.style.setProperty('--tu', f(Xt).toFixed(3)); el.style.setProperty('--ha', xa < xb ? '90deg' : '270deg');
+    }
+    if (F.top) { F.top.style.setProperty('--hu', head.toFixed(3)); F.top.style.setProperty('--tu', tail.toFixed(3)); F.top.style.setProperty('--ha', (Math.atan2(cb, -sb) / R).toFixed(1) + 'deg'); }
+    if (this.stage) this.stage.style.setProperty('--ex', Math.round(E * k * 1.04) + 'px');
+  }
+  light(c, rx, ry, k, Ld, Id, Ln, In, n) {
+    c.style.transform = 'rotateX(' + rx.toFixed(2) + 'deg) rotateY(' + ry.toFixed(2) + 'deg)';
+    const R = Math.PI / 180, ca = Math.cos(rx * R), sa = Math.sin(rx * R), cb = Math.cos(ry * R), sb = Math.sin(ry * R);
+    const ld = Math.hypot(Ld[0], Ld[1], Ld[2]) || 1, lnn = Math.hypot(Ln[0], Ln[1], Ln[2]) || 1;
+    const F = { front: [0, 0, 1], back: [0, 0, -1], right: [1, 0, 0], left: [-1, 0, 0], top: [0, -1, 0] };
+    for (const key in F) {
+      const x = F[key][0], y = F[key][1], z = F[key][2];
+      const x1 = x * cb + z * sb, z1 = -x * sb + z * cb, y2 = y * ca - z1 * sa, z2 = y * sa + z1 * ca;
+      const dd = Math.max(0, (x1 * Ld[0] + y2 * Ld[1] + z2 * Ld[2]) / ld), dn = Math.max(0, (x1 * Ln[0] + y2 * Ln[1] + z2 * Ln[2]) / lnn);
+      const d = Math.min(1, Id * dd + In * dn);
+      c.style.setProperty('--sh-' + key, (0.34 * Math.pow(1 - d, 1.25) + .2 * n).toFixed(3));
+      c.style.setProperty('--hl-' + key, Math.min(1, Math.pow(dd, 2.5) * Id + .5 * In * dn).toFixed(3));
+    }
+    if (this.shadow) this.shadow.style.width = Math.round((280 * Math.abs(cb) + 224 * Math.abs(sb) + 80) * k) + 'px';
+  }
+  open(t) {
+    clearTimeout(this.ct);
+    if (!this.state.popup) this.lastFocus = document.activeElement;
+    this.setState({ popup: t, closing: false });
+    // move keyboard focus into the dialog (first field if there is one)
+    setTimeout(() => { const d = document.querySelector('.dlg'); if (!d) return; const f = d.querySelector('input,textarea'); (f || d).focus({ preventScroll: true }); }, 60);
+  }
+  close() {
+    if (!this.state.popup) return;
+    this.setState({ closing: true });
+    clearTimeout(this.ct);
+    this.ct = setTimeout(() => { this.setState({ popup: null, closing: false }); const f = this.lastFocus; this.lastFocus = null; if (f && f.focus && document.contains(f)) f.focus({ preventScroll: true }); }, 220);
+  }
+  renderVals() {
+    const t = this.state.popup, form = this.FORMS[t], a = this.state.active;
+    const open = k => () => this.open(k);
+    const setCookie = v => () => { try { localStorage.setItem('rb-cookie', v); } catch (e) {} this.setState({ cookie: false }); };
+    return {
+      setStage: this.setStage, setCube: this.setCube, setShadow: this.setShadow, setVideo: this.setVideo,
+      setTrack: this.setTrack, setArc: this.setArc, setSun: this.setSun, setCw: this.setCw, setHalf: this.setHalf, setWin: this.setWin, setWsh: this.setWsh, setFloat: this.setFloat,
+      st0: a === 0 ? 'on' : '', st1: a === 1 ? 'on' : '', st2: a === 2 ? 'on' : '',
+      hdr: this.state.scrolled ? 'hdr scrolled' : 'hdr',
+      langCode: this.state.lang, langOpen: this.state.langOpen, langExp: this.state.langOpen ? 'true' : 'false',
+      toggleLang: () => this.setState({ langOpen: !this.state.langOpen }),
+      langs: ['IT', 'EN', 'ES'].filter(code => code !== this.state.lang).map(code => ({ code, pick: () => this.setState({ lang: code, langOpen: false }) })),
+      openContact: open('contact'), openConsult: open('consult'), openDealer: open('dealer'), openCompare: open('compare'), openCalc: () => {},
+      submitLead: e => { e.preventDefault(); this.open('sent'); },
+      popOpen: !!t, popCls: this.state.closing ? 'pop out' : 'pop', boxCls: t === 'compare' ? 'dlg wide' : 'dlg',
+      isForm: !!form, isSent: t === 'sent', isCompare: t === 'compare',
+      p: form ? { title: form.title, intro: form.intro, cta: form.cta, fields: form.fields.map(fl => { const area = fl.endsWith('*'); return { label: area ? fl.slice(0, -1) : fl, area, input: !area, type: fl === 'Email' ? 'email' : fl === 'Phone' ? 'tel' : 'text', req: fl === 'Name' || fl === 'Email' }; }) } : { title: '', intro: '', cta: '', fields: [] },
+      cmp: this.CMP.flatMap(([mat, rows, own]) => rows.map(([d, l, c], i) => ({ mat: i === 0 ? mat : '', d, l, c, bg: own ? '#E6F3EC' : '#fff', fg: own ? '#126E55' : '#14231D', cw: own ? 800 : 500, border: i === 0 ? '1px solid #E2DED5' : '1px solid #F1EEE8' }))),
+      close: () => this.close(), stop: e => e.stopPropagation(), submit: e => { e.preventDefault(); this.open('sent'); },
+      cookie: this.state.cookie, accept: setCookie('1'), decline: setCookie('0'),
+    };
+  }
+}
+</script>
+</body>
+</html>
